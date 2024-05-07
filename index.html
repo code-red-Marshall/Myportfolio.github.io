@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">CodeMarshall</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#blog">My Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Bhargav Nath</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#Skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#certificates" onclick="toggleMenu()">Certificates</a></li>
+                <li><a href="#blog" onclick="toggleMenu()">My Blog</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="assets/profile-pic.png" alt="Bhargav Nath Profile Picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Bhargav Nath</h1>
+            <p class="section__text__p2">Data Scientist and Analyst</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+            Download Resume
+          </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/bhargav-nath/'" />
+                <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/code-red-Marshall'" />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="assets/about.png" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <!--<div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>2+ years <br />Frontend Development</p>
+                    </div>
+                  -->
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Work Experience</h3>
+                        <ul>
+                            <li>All India Radio Tezpur - 2021
+                            </li>
+                            <li>Innodatatics - 2024
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>B.Tech E.C.E - 2016-20<br />M.Tech E.C.E - 2021-23</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        In the intricate dance of electrons and signals, I discovered a rhythm that resonated with my aspirations. My academic odyssey, crowned with an honors degree in ECE, was not just about mastering technology but also about embracing the narrative power
+                        of data. My master’s thesis, a deep dive into ECG data through the lens of machine learning, was more than a project; it was a testament to my diligence and a gateway to the data realm. Today, I stand ready to join a team where
+                        my unwavering commitment to data storytelling and my proficiency in crafting visual insights can contribute to informed decisions and strategic success. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Skills">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Data Skills</h1>
+        <div class="Skills-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Power-BI</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Web Scrapping</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Excel</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Exploratory Data Analysis (EDA)</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="skills-sub-title"></h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>ML/ AI</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Natural Language Processing (NLP)</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Generative AI (LLM/RAG/Fine-tuning)</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>CRISP-ML(Q)</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="Skills-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="assets/1_RD1s9xBIvd_ycJUnX12Tyw@2x.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <p class="Skills-sub-title project-title">Pharmabot : A Natural Responsive LLM Chatbot for Drug Classification and Information.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/code-red-Marshall/Pharmabot--LLM-chatbot'">
+                View Project
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="assets/Fingerprint.jpg" alt="Project 2" class="project-img" />
+                    </div>
+                    <p class="Skills-sub-title project-title">Machine Learning & ECG Analysis: Biometric Identity (Machine Learning)</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/code-red-Marshall/Biometric-Human-Identification-using-ECG'">
+                View Project
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="assets/225690586-ef6095dc-a2e4-4835-8061-6707adf54c08.png" alt="Project 3" class="project-img" />
+                    </div>
+                    <p class="Skills-sub-title project-title">Data Science And Analysis - BCGX - FORAGE</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/code-red-Marshall/Data-Science---BCG-X--Forage'">
+                View Project
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="Skills-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="assets/1669905904765.jpeg" alt="Project 4" class="project-img" />
+                    </div>
+                    <p class="Skills-sub-title project-title"> Generative-AI - BCGX- FORAGE</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/code-red-Marshall/Generative-AI--BCGx--Forage'">
+                View Project
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="assets/Screenshot 2024-04-26 012250.png" alt="Project 5" class="project-img" />
+                    </div>
+                    <p class="Skills-sub-title project-title">Sale Insights - Data Analysis (SQL & PowerBi) </p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/code-red-Marshall/Sale-Insights-Data-Analytics-using-SQL-and-Power-Bi'">
+                View Project
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="assets/1691598306703.png" alt="Project 6" class="project-img" />
+                    </div>
+                    <p class="Skills-sub-title project-title">Power-BI - PWC Forage</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/code-red-Marshall/Power-Bi--PWC-Forage'">
+                View Project
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .mySlides img {
+            border: 1px solid #272525; /* Adjusted border size */
+            border-radius: 20px;
+        }
+    </style>
+    
+    <section id="certificates">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Certificates</h1>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="assets/ds (2)_page-0001.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="assets/python certificate_page-0001.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="assets/Power Bi_page-0001.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="assets/sql_page-0001.jpg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </section>
+
+    <style>
+        .carousel {
+            display: flex;
+            justify-content: center; /* Center the cards */
+            overflow-x: auto;
+        }
+    
+        .card {
+            flex: 0 0 auto;
+            width: 300px;
+            margin: 10px;
+            background-color: #f0f0f0;
+            border: 2px solid #B0B0B0; /* Border for each card */
+            border-radius: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+
+    
+    <section id="blog">
+        <p class="section__text__p1">Visit </p>
+<h1 class="title">My Blog</h1>
+        <div class="carousel">
+            <div class="card">
+                <img src="assets/fifa.jpeg" alt="Blog Image" style="width:100%">
+                <h2>The First Data Expedition</h2>
+                <p>From FIFA 23 Dataset to Insights</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://medium.com/@bhargavnth07/the-first-data-expedition-from-fifa-23-dataset-to-insights-cde47a5437e2'">Read Now</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/MACHINE-LEARNING-IN-HEALTHCARE.png" alt="Blog Image" style="width:100%">
+                    <h2>Biometric Human Identification</h2>
+                    <p>Patient Classification using ECG</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://medium.com/@bhargavnth07/biometric-human-identification-for-patient-classification-using-ecg-b05f51846194'">Read Now</button>
+                    </div>
+                </div>
+                <!-- Add more blog cards as needed -->
+            </div>
+    </section>
+
+    <script>
+        var carousel = document.querySelector('.carousel');
+        carousel.addEventListener('wheel', function(e) {
+            if (e.deltaY > 0) carousel.scrollLeft += 100;
+            else carousel.scrollLeft -= 100;
+        });
+    </script>
+
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:examplemail@gmail.com">bhargavnth07@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com/in/bhargav-nath/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Bhargav Nath. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
